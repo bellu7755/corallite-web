@@ -36,7 +36,7 @@ body {
   flex-wrap: nowrap;
   align-items: center;
   justify-content: space-between;
-  background-color: #e2abcb;
+  background-color: #f77061;
   font-size: xx-large;
   margin-top: 20px;
   color: #ffe0e3;
@@ -50,7 +50,7 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 20px 40px;
-  background-color: rgb(249, 255, 212);
+  background-color: rgb(240, 230, 181);
 }
 #fishy {
     margin-top: 40px;
