@@ -1,5 +1,100 @@
 body {
-  font-family: Arial;
-  text-align: center;
-  margin-top: 100px;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 30px;
+  font-family: 'Courier New', Courier, monospace;
+}
+.fadeUp {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease;
+}
+
+.fadeUp.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+.logo {
+    position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  z-index: 9999;
+}
+#logo-image {
+  width: 300px;
+  height: auto;
+  margin-left: 620px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #e2abcb;
+  font-size: xx-large;
+  margin-top: 20px;
+  color: #ffe0e3;
+}
+.mission-statement {
+    margin-left: 100px;
+    margin-top: 200px;
+}
+.intro {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 40px;
+  background-color: rgb(249, 255, 212);
+}
+#fishy {
+    margin-top: 40px;
+    width: 200px;
+    height: auto;
+    align-items: left;
+}
+.introWords {
+    font-size: xx-large;
+    flex-direction: column;
+    margin-right: 40px;
+    color: rgb(113, 24, 113);
+  text-align: right;
+}
+.donation {
+    display: flex;
+    color: rgb(174, 41, 146);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 231, 182);
+    margin-top: -20px;
+    gap: 20px;
+    padding: 100px 100px;
+}
+
+.donateButton {
+    background-color: #ff61bd;
+    color: #ffe0e3;
+    font-size: large;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-family: 'Courier New', Courier, monospace;
+    width: 100px;
+    transition: all 0.3s ease;
+
+}
+
+.donateButton:hover {
+    background-color: #ff7a55;
+    width: 150px;
+    height: auto;
+    color: rgb(174, 41, 146);
+    font-size: x-large;
 }
