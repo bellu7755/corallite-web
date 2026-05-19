@@ -1,8 +1,13 @@
+@font-face {
+  font-family: 'AntiqueOlive';
+  src: url('fonts/antiqueOlive.otf');
+}
+
 body {
   margin-left: 0;
   margin-right: 0;
   margin-top: 30px;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'AntiqueOlive', sans-serif;
 }
 .fadeUp {
   opacity: 0;
@@ -38,19 +43,18 @@ body {
   justify-content: space-between;
   background-image: url(watercolor.png);
   font-size: xx-large;
-  margin-top: 20px;
   color: #ffffff;
 }
 .mission-statement {
     margin-left: 50px;
-    margin-top: 200px;
+    margin-top: 75px;
 }
 .intro {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 20px 40px;
-  background-color: rgb(240, 230, 181);
+  background-color: rgb(253, 255, 236);
 }
 #fishy {
     margin-top: 40px;
@@ -59,7 +63,7 @@ body {
     align-items: left;
 }
 .introWords {
-    font-size: xx-large;
+    font-size: x-large;
     flex-direction: column;
     margin-right: 40px;
     color: rgb(113, 24, 113);
