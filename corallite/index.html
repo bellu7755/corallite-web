@@ -1,13 +1,6 @@
 
 
-<div class = "contact fadeUp">
-  <h2> Contact us </h2>
-
-  <div class="contactInfo">
-    <p>Email: </p>
-  </div>
-
-  div>p>h2></h2></div><!DOCTYPE html>
+</h2></div><!DOCTYPE html>
 <html>
 <head>
   <link rel="stylesheet" href="style.css">
@@ -17,18 +10,35 @@
 <body>
 <body>
 
+ <!-- Hamburger Icon -->
+<div class="hamburger" onclick="openMenu()">
+    &#9776;
+</div>
+
+<!-- Side Menu -->
+<div id="sideMenu" class="side-menu">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeMenu()">&times;</a>
+
+    <!-- Links to your page sections -->
+    <a href="#mission" onclick="closeMenu()">Mission</a>
+    <a href="#team" onclick="closeMenu()">Meet the Team</a>
+    <a href="#donate" onclick="closeMenu()">Donate</a>
+    <a href="#contact" onclick="closeMenu()">Contact</a>
+
+</div>
+  
 <div class="logo fadeUp">
   <img src="logo.png" id="logo-image">
 </div>
 
-<div class="container fadeUp">
+<div class="container fadeUp" id="mission">
   <p class="mission-statement">
     Through Corallite Creators, our mission is to bring unique STEM experiences to students in underserved communities, fostering creativity, critical thinking, and a passion for learning.
   </p>
   <img src="bubbles.gif">
 </div>
 
-<div class="intro fadeUp">
+<div class="intro fadeUp" id="team">
   <div class="fishy">
     <img src="peach.gif" id="fishy-image">
   </div>
@@ -39,15 +49,21 @@
   </div>
 </div>
 
-<div class="donation fadeUp">
+<div class="donation fadeUp" id="donate">
   <p>Donate to support our cause</p>
   <button class="donateButton" onclick="goPaypal()">Donate</button>
 </div>
 
-<div class="donation fadeUp">
-  <p>Donate to support our cause</p>
-  <button class="donateButton" onclick="goPaypal()">Donate</button>
+<div class = "contact fadeUp" id="contact">
+  <h2> Contact us </h2>
+
+  <div class="contactInfo">
+    <a href="mailto:corallitecreators@gmail.com" class="donateButton">Email Us</a>
+  </div>
+
 </div>
+
+
 
 <script src="script.js"></script>
 </body>

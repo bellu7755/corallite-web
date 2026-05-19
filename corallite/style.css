@@ -11,6 +11,60 @@ body {
   letter-spacing: 2px;
   line-height: 1.5;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Hamburger Icon */
+.hamburger {
+  font-size: 35px;
+  cursor: pointer;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 13000; /* FIX: above menu & logo */
+  color: #f06b3a;
+}
+
+
+/* Side Menu Styling */
+.side-menu {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 12000;  /* FIX: higher than logo */
+  top: 0;
+  left: 0;
+  background-color: #ffc8a8;
+  overflow-x: hidden;
+  transition: 0.4s;
+  padding-top: 60px;
+  box-shadow: 4px 0 10px rgba(0,0,0,0.2);
+}
+
+/* Menu links */
+.side-menu a {
+  padding: 12px 20px;
+  text-decoration: none;
+  font-size: 24px;
+  color: #f06b3a;
+  display: block;
+  transition: 0.3s;
+}
+
+.side-menu a:hover {
+  background-color: #ffd0e0;
+}
+
+/* X close button */
+.side-menu .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  font-size: 40px;
+}
+
 .fadeUp {
   opacity: 0;
   transform: translateY(30px);
@@ -21,6 +75,7 @@ body {
   opacity: 1;
   transform: translateY(0);
 }
+
 .logo {
     position: fixed;
   top: 0;
@@ -103,4 +158,16 @@ body {
     height: auto;
     color: rgb(174, 41, 146);
     font-size: x-large;
+}
+
+.contact {
+    display: flex;
+    color: rgb(174, 41, 146);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(232, 143, 126);
+    margin-top: -20px;
+    gap: 20px;
+    padding: 100px 100px;
 }
