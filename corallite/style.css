@@ -26,7 +26,7 @@ body {
   z-index: 9999;
 }
 #logo-image {
-  width: 300px;
+  width: 175px;
   height: auto;
   margin-left: 620px;
 }
@@ -42,7 +42,7 @@ body {
   color: #ffffff;
 }
 .mission-statement {
-    margin-left: 100px;
+    margin-left: 50px;
     margin-top: 200px;
 }
 .intro {
