@@ -36,10 +36,10 @@ body {
   flex-wrap: nowrap;
   align-items: center;
   justify-content: space-between;
-  background-color: #f77061;
+  background-image: url(watercolor.png);
   font-size: xx-large;
   margin-top: 20px;
-  color: #ffe0e3;
+  color: #ffffff;
 }
 .mission-statement {
     margin-left: 100px;
