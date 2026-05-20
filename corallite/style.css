@@ -24,7 +24,7 @@ html {
   top: 20px;
   left: 20px;
   z-index: 13000; /* FIX: above menu & logo */
-  color: #f06b3a;
+  color: #f45f28;
 }
 
 
@@ -36,11 +36,12 @@ html {
   z-index: 12000;  /* FIX: higher than logo */
   top: 0;
   left: 0;
-  background-color: #ffc8a8;
+  background-color: #ffe6d7;
   overflow-x: hidden;
   transition: 0.4s;
   padding-top: 60px;
-  box-shadow: 4px 0 10px rgba(0,0,0,0.2);
+  box-shadow: 4px 0 10px rgba(255, 0, 0, 0.243);
+  padding-top: 100px;
 }
 
 .side-menu a {
@@ -58,13 +59,14 @@ html {
 }
 
 .side-menu a:hover {
-  background-color: #ffd0e0;
+  background-color: #ff8793;
+  color: #ffe5e8;
 }
 
 /* X close button */
 .side-menu .closebtn {
   position: absolute;
-  top: 20px;
+  top: 7px;
   right: 25px;
   font-size: 40px;
 }
@@ -118,6 +120,8 @@ html {
   font-size: xx-large;
   margin-top: -100px;
   margin-bottom:-100px;
+  padding-top: 100px;
+  margin-bottom: -20px;
   color: #ffffff;
 }
 .mission-statement {
@@ -127,7 +131,8 @@ html {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: rgb(253, 255, 236);
+  background-image: url(watercolor.png);
+  transform: scale(-1, -1);
 }
 #fishy {
     margin-top: 40px;
@@ -189,13 +194,14 @@ html {
 }
 
 .about {
-  background-color: #ffe5e8; /* very light red/pink */
-  color: #b43a4e;            /* darker red text */
-  padding: 100px 60px;
-  text-align: center;
+  background-color: #fffcf3; /* very light red/pink */
+  color: #ff735e;            /* darker red text */
+  align-items: center;
   font-size: x-large;
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  margin-top: -20px;
+  max-width: 1350px;
+}
+.about p{
+    margin-top: -45px;
 }
