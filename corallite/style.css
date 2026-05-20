@@ -120,7 +120,7 @@ html {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: rgba(255, 255, 255, 0.95);
+  background-color: rgba(255, 255, 255, 0.9);
   backdrop-filter: blur(10px);
   display: flex;
   align-items: center;
@@ -130,7 +130,7 @@ html {
 #logo-image {
   width: 175px;
   height: auto;
-  margin-left: 620px;
+  margin-left: 640px;
 }
 
 .container {
@@ -177,7 +177,7 @@ html {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: rgb(255, 164, 99);
+    background-color: rgb(255, 244, 236);
     margin-top: -20px;
     gap: 20px;
     padding: 100px 100px;
@@ -185,9 +185,9 @@ html {
 
 .donateButton {
     font-family: 'antiqueOlive', sans-serif;
-    background-color: #ff61bd;
+    background-color: #ff8e8e;
     color: #ffe0e3;
-    font-size: large;
+    font-size: medium;
     padding: 10px 20px;
     border: none;
     border-radius: 40px;
@@ -198,11 +198,13 @@ html {
 }
 
 .donateButton:hover {
+    
     font-family: 'antiqueOlive', sans-serif;
+    box-shadow: 4px 0 10px rgba(255, 0, 0, 0.243);
     background-color: #ff7a55;
     width: 150px;
     height: auto;
-    color: rgb(174, 41, 146);
+    color: rgb(255, 255, 255);
     font-size: x-large;
 }
 
