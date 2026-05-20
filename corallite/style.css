@@ -2,7 +2,28 @@
   font-family: 'AntiqueOlive';
   src: url('fonts/antiqueOlive.otf');
 }
+.floating-fish {
+  animation: floatFish 6s ease-in-out infinite;
+}
 
+@keyframes floatFish {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+
+  50% {
+    transform: translateY(-15px) rotate(3deg);
+  }
+}
+#tucker {
+    width: 800px;
+    opacity: calc(0.8);
+    height: auto;
+    display: block;
+    margin-bottom: -50px;
+    padding-top: 200px;
+    margin-left: 150px;
+}
 body {
   margin-left: 0;
   margin-right: 0;
@@ -52,7 +73,7 @@ html {
 .side-menu a {
   padding: 12px 20px;
   text-decoration: none;
-  font-size: 24px;
+  font-size: 21px;
   color: #f06b3a;
   display: block;
   transition: 0.3s;
@@ -99,7 +120,8 @@ html {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
   display: flex;
   align-items: center;
   padding: 10px;
@@ -117,7 +139,7 @@ html {
   align-items: center;
   justify-content: space-between;
   background-image: url(watercolor.png);
-  font-size: xx-large;
+  font-size: x-large;
   margin-top: -100px;
   margin-bottom:-100px;
   padding-top: 100px;
@@ -125,14 +147,16 @@ html {
   color: #ffffff;
 }
 .mission-statement {
+    max-width: 600px;
     margin-left: 75px;
 }
 .intro {
+  transform: scaleX(-1);
   display: flex;
   align-items: center;
   justify-content: space-between;
   background-image: url(watercolor.png);
-  transform: scale(-1, -1);
+  
 }
 #fishy {
     margin-top: 40px;
@@ -153,13 +177,14 @@ html {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: rgb(255, 231, 182);
+    background-color: rgb(255, 164, 99);
     margin-top: -20px;
     gap: 20px;
     padding: 100px 100px;
 }
 
 .donateButton {
+    font-family: 'antiqueOlive', sans-serif;
     background-color: #ff61bd;
     color: #ffe0e3;
     font-size: large;
@@ -167,13 +192,13 @@ html {
     border: none;
     border-radius: 40px;
     cursor: pointer;
-    font-family: 'Courier New', Courier, monospace;
     width: 100px;
     transition: all 0.3s ease;
 
 }
 
 .donateButton:hover {
+    font-family: 'antiqueOlive', sans-serif;
     background-color: #ff7a55;
     width: 150px;
     height: auto;
@@ -187,7 +212,7 @@ html {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: rgb(232, 143, 126);
+    background-color: rgb(255, 234, 230);
     margin-top: -20px;
     gap: 20px;
     padding: 100px 100px;
