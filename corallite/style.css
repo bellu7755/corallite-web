@@ -222,7 +222,7 @@ html {
 
 .about {
   background-color: #fffcf3; /* very light red/pink */
-  color: #ff735e;            /* darker red text */
+  color: #ff7d8a;            /* darker red text */
   align-items: center;
   font-size: x-large;
   display: flex;
@@ -235,9 +235,10 @@ html {
 
 /* Past Events: horizontal scroller */
 .past-events {
-  background-color: #fff8f0;
-  color: #7a3a2f;
-  padding: 120px 60px;
+  background-color: #fff2e9;
+  font-size: large;
+  color: #ff7a7a;
+  padding: 100px 60px;
   max-width: 1350px;
 }
 .events-scroller {
@@ -265,7 +266,7 @@ html {
 }
 .event-content h3 {
   margin: 0 0 8px 0;
-  color: #d45d3b;
+  color: #ff4096;
 }
 .event-images {
   display: flex;
