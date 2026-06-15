@@ -237,7 +237,8 @@ html {
 .past-events {
   background-color: #fff8f0;
   color: #7a3a2f;
-  padding: 60px 40px;
+  padding: 120px 60px;
+  max-width: 1350px;
 }
 .events-scroller {
   display: flex;
