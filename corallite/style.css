@@ -232,3 +232,53 @@ html {
 .about p{
     margin-top: -45px;
 }
+
+/* Past Events: horizontal scroller */
+.past-events {
+  background-color: #fff8f0;
+  color: #7a3a2f;
+  padding: 60px 40px;
+}
+.events-scroller {
+  display: flex;
+  gap: 24px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  padding: 20px 10px;
+}
+.event-box {
+  flex: 0 0 90%;
+  max-width: 900px;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  scroll-snap-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+@media (min-width: 900px) {
+  .event-box { flex: 0 0 70%; }
+}
+.event-content h3 {
+  margin: 0 0 8px 0;
+  color: #d45d3b;
+}
+.event-images {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+.event-img {
+  width: calc((100% - 20px) / 3);
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.scroll-hint { text-align: right; opacity: 0.7; margin-top: 12px; }
+
+/* Hide scrollbar for a cleaner look */
+.events-scroller::-webkit-scrollbar { height: 10px; }
+.events-scroller::-webkit-scrollbar-thumb { background: rgba(0,0,0,0.12); border-radius: 10px; }
